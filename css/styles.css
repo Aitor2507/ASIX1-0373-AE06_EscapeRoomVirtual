@@ -1,0 +1,7 @@
+body {
+    background-color: black;
+    border-radius: 25%;
+}
+#style_form label {
+    color: aqua;
+}
