@@ -12,18 +12,17 @@
     <?php 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($_POST['respuesta1'] == "hack") {
-            $_SESSION['reto1'] = "hack";
             header('Location:reto2.php');
-        } else {
+        } elseif(!($_SESSION["reto1"] == 'check')) {
             header('Location:../index.php');
             exit();
         }
     }
     ?>
 
-<form action="../proc/res.proc.php" method="post">
+<form  method="post">
     <p>Introduce la palabra en texto plano correspondiente a este código binario: 01101000 01100001 01100011 01101011.</p>
-    <input type="text" name="respuesta" required>
+    <input type="text" name="respuesta1" required>
     <button type="submit" value="enviar">Enviar</button>
 </form>
 

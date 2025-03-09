@@ -10,7 +10,14 @@
 </head>
 
 <body>
-    <p>Hola</p>
+
+
+
+<form method="post">
+    <p>Tu firewall detectó actividad sospechosa desde una IP privada, ¿cuál es la correcta?</p>
+    <input type="text" name="respuesta" required>
+    <button type="submit">Enviar</button>
+</form>
 </body>
 
 </html>

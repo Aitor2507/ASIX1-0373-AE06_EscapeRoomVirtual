@@ -10,6 +10,13 @@
 
 <body>
     
+
+
+<form method="post">
+    <p>Convierte este código hexadecimal a texto: 4861636b6572</p>
+    <input type="text" name="respuesta" required>
+    <button type="submit">Enviar</button>
+</form>
 </body>
 
 </html>

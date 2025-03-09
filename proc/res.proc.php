@@ -6,14 +6,14 @@ if (isset($_POST['reto1']) && strtolower($_POST['respuesta1']) == 'hack') {
     session_start();
     $_SESSION['reto1'] = 'check';
 
-    header('Location: ../view/reto1.php');
+    header('Location:../view/reto1.php');
 } else if (isset($_POST['index'])){
-    header('Location: ../index.php?msg=H***');
+    header('Location:../index.php?msg=H***');
 }
 
 
 // Reto1 -> Reto2
-else if (isset($_POST['reto2']) && strtolower($_POST['']) == ''){
+else if (isset($_POST['reto2']) && strtolower($_POST['respuesta2']) == 'clave2'){
     // Recupero la sesión
     session_start();
     $_SESSION['reto2']= 'check';
@@ -25,7 +25,7 @@ else if (isset($_POST['reto2']) && strtolower($_POST['']) == ''){
 
 
 // Reto2 -> Reto3
-else if (isset($_POST['reto3']) && strtolower($_POST['']) == ''){
+else if (isset($_POST['reto3']) && strtolower($_POST['respuesta3']) == 'clave3'){
     // Recupero la sesión
     session_start();
     $_SESSION['reto3']= 'check';
@@ -38,7 +38,7 @@ else if (isset($_POST['reto3']) && strtolower($_POST['']) == ''){
 
 
 // Reto3 -> Reto4
-else if (isset($_POST['reto4']) && strtolower($_POST['']) == ''){
+else if (isset($_POST['reto4']) && strtolower($_POST['respuesta4']) == 'clave4'){
     // Recupero la sesión
     session_start();
     $_SESSION['reto4']= 'check';

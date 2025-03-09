@@ -36,7 +36,6 @@
 
     <div class="style_form">
     <form action="proc/res.proc.php" method="POST">
-            <label id="index" name="index"></label>
             <a href="view/reto1.php">Iniciar el reto</label>
     </form>
     </div>
