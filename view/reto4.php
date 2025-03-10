@@ -1,3 +1,10 @@
+<?php // Esto evita que se salte el primer paso
+session_start();
+if (!$_SESSION['reto3'] == 'check') {
+    header('Location: ../index.php?error=trampas');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +17,7 @@
 
 <body>
     
-
+<!--Esto es un codigo hexadecimal que se debe convertir a texto-->
 
 <form method="post">
     <p>Convierte este código hexadecimal a texto: 4861636b6572</p>

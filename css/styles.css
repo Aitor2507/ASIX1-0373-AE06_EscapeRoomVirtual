@@ -11,6 +11,16 @@ body {
     align-items: center;
 }
 
+.acertijo_reto1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
 .matrix-container {
     position: absolute;
     top: 0;

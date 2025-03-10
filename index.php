@@ -36,7 +36,7 @@
 
     <div class="style_form">
     <form action="proc/res.proc.php" method="POST">
-            <a href="view/reto1.php">Iniciar el reto</label>
+            <a href="view/reto1.php">Iniciar el reto</a>
     </form>
     </div>
 
