@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="img/svg" href="../img/puzzle-piece-solid.svg">
+    <link rel="icon" type="img/svg" href="img/puzzle-piece-solid.svg">
     <link rel="stylesheet" href="css/styles.css">
     <title>Escape Room - Un pequeño problema en mi PC</title>
     
@@ -20,7 +20,7 @@
 
         <p>Eres un analista de ciberseguridad trabajando en tu computadora como cualquier otro día hasta que algo extraño sucede. De repente, la pantalla se llena de código corrupto, la interfaz cambia y un mensaje aparece:
 
-        "SISTEMA CORROMPIDO. ACCESO DENEGADO. INTRODUCE LAS CREDENCIALES CORRECTAS PARA RECUPERAR EL CONTROL DEL SISTEMA."
+        "SISTEMA CORROMPIDO. ACCESO DENEGADO. INTRODUCE LAS PALABRAS CLAVE CORRECTAS PARA RECUPERAR EL CONTROL DEL SISTEMA."
 
         Parece que alguien ha activado un bloqueo en tu sistema. Si no resuelves los acertijos a tiempo, tu equipo quedará inutilizado y todos tus archivos desaparecerán para siempre.
 

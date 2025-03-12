@@ -1,8 +1,8 @@
 <?php // Esto evita que se salte el primer paso
-session_start();
-if (!$_SESSION['reto1'] == 'check') {
-    header('Location: ../index.php?error=trampas');
-}
+// session_start();
+// if (!$_SESSION['reto1'] == 'check') {
+//     header('Location: ../index.php?error=trampas');
+// }
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +26,14 @@ if (!$_SESSION['reto1'] == 'check') {
     <label for="mascara">Máscara de subred:</label>
     <input type="text" name="mascara" placeholder="255..." required>
     <button type="submit">Enviar</button>
-    
+    <div id="mensaje" style="color: red; display: none;" >Pista: Si no se te da redes puedes buscar por la página </div>
+    <img src="../img/img_reto2.1.PNG" alt="Imagen reto 2.1" id="img_reto2.1">
+
+    <img src="../img/img_reto2.2.PNG" alt="Imagen reto 2.2.">
+    </div>
+    <div class="img_reto2.3">
+    <img src="../img/img_reto2.3.PNG" alt="Imagen reto 2.3">
+    </div>
 </form>
 
 </body>

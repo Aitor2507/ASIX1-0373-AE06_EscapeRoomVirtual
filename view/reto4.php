@@ -1,8 +1,8 @@
 <?php // Esto evita que se salte el primer paso
-session_start();
-if (!$_SESSION['reto3'] == 'check') {
-    header('Location: ../index.php?error=trampas');
-}
+// session_start();
+// if (!$_SESSION['reto3'] == 'check') {
+//     header('Location: ../index.php?error=trampas');
+// }
 ?>
 
 <!DOCTYPE html>
@@ -12,18 +12,23 @@ if (!$_SESSION['reto3'] == 'check') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="img/svg" href="../img/puzzle-piece-solid.svg">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Reto 4 -</title>
+    <title>Reto 4 - Hexadecimal</title>
 </head>
 
 <body>
     
-<!--Esto es un codigo hexadecimal que se debe convertir a texto-->
+<!--Esto es un codigo hexadecimal que se debe convertir a texto, en caso de que no lo sepa que lo busque en una imagen escondida-->
 
 <form method="post">
     <p>Convierte este código hexadecimal a texto: 4861636b6572</p>
     <input type="text" name="respuesta" required>
     <button type="submit">Enviar</button>
 </form>
+
+<a href="https://es.wikipedia.org/wiki/Chema_Alonso">
+        <img src="../img/hacker.jpg" alt="Hacker" id="hacker">
+</a>
+
 </body>
 
 </html>
