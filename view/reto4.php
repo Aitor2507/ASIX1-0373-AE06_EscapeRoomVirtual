@@ -1,8 +1,8 @@
 <?php // Esto evita que se salte el primer paso
-// session_start();
-// if (!$_SESSION['reto3'] == 'check') {
-//     header('Location: ../index.php?error=trampas');
-// }
+session_start();
+if (!$_SESSION['reto3'] == 'check') {
+    header('Location: ../index.php?error=trampas');
+}
 ?>
 
 <!DOCTYPE html>
@@ -19,10 +19,10 @@
     
 <!--Esto es un codigo hexadecimal que se debe convertir a texto, en caso de que no lo sepa que lo busque en una imagen escondida-->
 
-<form method="post">
+<form action="../proc/res.proc.php" method="post">
     <p>Convierte este código hexadecimal a texto: 4861636b6572</p>
-    <input type="text" name="respuesta" required>
-    <button type="submit">Enviar</button>
+    <input type="text" name="respuesta4" required>
+    <button type="submit"  name="enviar4">Enviar</button>
 </form>
 
 <a href="https://es.wikipedia.org/wiki/Chema_Alonso", target="_blank">
