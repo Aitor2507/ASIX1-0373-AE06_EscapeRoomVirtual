@@ -1,8 +1,8 @@
 <?php // Esto evita que se salte el primer paso
-session_start();
-if (!$_SESSION['reto4'] == 'check') {
-    header('Location:index.php?error=trampas');
-}
+// session_start();
+// if (!$_SESSION['reto4'] == 'check') {
+//     header('Location:index.php?error=trampas');
+// }
 ?>
 
 <!DOCTYPE html>

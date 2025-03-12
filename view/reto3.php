@@ -21,6 +21,10 @@
 <form method="post">
     <p>Desencripta el siguiente mensaje: KHOOR ZRUOG</p>
     <input type="text" name="respuesta" required>
+    <div id="desplazamiento">
+    <label for="desplazamiento">Pista -> Cuál es la respuesta de esta operación combinada: (5x2)-(10+3) </label>
+    <input type="number" name="desplazamiento" placeholder="Desplazamiento" min="-6" max="6" required>
+    </div>
     <button type="submit">Enviar</button>
 </form>
 

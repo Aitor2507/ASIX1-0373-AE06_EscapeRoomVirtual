@@ -25,7 +25,7 @@
     <button type="submit">Enviar</button>
 </form>
 
-<a href="https://es.wikipedia.org/wiki/Chema_Alonso">
+<a href="https://es.wikipedia.org/wiki/Chema_Alonso", target="_blank">
         <img src="../img/hacker.jpg" alt="Hacker" id="hacker">
 </a>
 
