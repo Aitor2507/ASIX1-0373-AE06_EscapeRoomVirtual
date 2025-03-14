@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="img/svg" href="img/puzzle-piece-solid.svg">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styless.css">
     <title>Escape Room - Un pequeño problema en mi PC</title>
     
 </head>
@@ -16,9 +16,9 @@
 
     <h2>Un pequeño problema en mi PC</h2>
 
-    <table border="1px">
+    <table border="1px" class="matrix-container">
 
-        <p>Eres un analista de ciberseguridad trabajando en tu computadora como cualquier otro día hasta que algo extraño sucede. De repente, la pantalla se llena de código corrupto, la interfaz cambia y un mensaje aparece:
+        <p> Eres un analista de ciberseguridad trabajando en tu computadora como cualquier otro día hasta que algo extraño sucede. De repente, la pantalla se llena de código corrupto, la interfaz cambia y un mensaje aparece:
 
         "SISTEMA CORROMPIDO. ACCESO DENEGADO. INTRODUCE LAS PALABRAS CLAVE CORRECTAS PARA RECUPERAR EL CONTROL DEL SISTEMA."
 
@@ -38,6 +38,47 @@
     <form action="proc/res.proc.php" method="POST">
             <a href="view/reto1.php">Iniciar el reto</a>
     </form>
+    <script>
+        const matrixContainer = document.querySelector('.matrix-container');
+
+        // Caracteres que simulan el código de Matrix
+        const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()_+";
+
+        // Función para generar un carácter aleatorio
+        function getRandomCharacter() {
+            return characters[Math.floor(Math.random() * characters.length)];
+        }
+
+        // Función para crear una columna de caracteres
+        function createMatrixStream() {
+            const stream = document.createElement('div');
+            stream.classList.add('matrix-stream');
+
+            // Posición horizontal aleatoria
+            stream.style.left = `${Math.random() * 100}vw`;
+
+            // Duración de la animación aleatoria
+            stream.style.animationDuration = `${Math.random() * 5 + 3}s`;
+
+            // Generar caracteres aleatorios
+            let content = '';
+            for (let i = 0; i < 30; i++) {
+                content += getRandomCharacter() + '<br>';
+            }
+            stream.innerHTML = content;
+
+            // Agregar la columna al contenedor
+            matrixContainer.appendChild(stream);
+
+            // Eliminar la columna después de que termine la animación
+            setTimeout(() => {
+                stream.remove();
+            }, parseFloat(stream.style.animationDuration) * 1000);
+        }
+
+        // Crear columnas de caracteres continuamente
+        setInterval(createMatrixStream, 70);
+    </script>
     </div>
 
 </body>

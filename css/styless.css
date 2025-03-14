@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #00ff00; /* Texto verde estilo Matrix */
+    background-color: black;
+    overflow: hidden; /* Evita el scroll */
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.5em;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+    color: #00ff00;
+    border: 1px solid #00ff00;
+}
+
+p {
+    padding: 20px;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.style_form {
+    text-align: center;
+    margin-top: 30px;
+}
+
+a {
+    color: #00ff00;
+    text-decoration: none;
+    font-size: 1.5em;
+    border: 1px solid #00ff00;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a:hover {
+    background-color: #00ff00;
+    color: black;
+}
+
+/* Efecto de Matrix */
+.matrix-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Lo envía al fondo */
+    overflow: hidden;
+}
+
+.matrix-stream {
+    position: absolute;
+    top: -100px;
+    color: #00ff00;
+    font-size: 16px;
+    writing-mode: vertical-lr; /* Texto vertical */
+    text-orientation: upright;
+    white-space: nowrap;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
