@@ -1,28 +1,35 @@
 body {
+    text-align: center;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    color: #00ff00; /* Texto verde estilo Matrix */
+    color: #00ff00; 
     background-color: black;
-    overflow: hidden; /* Evita el scroll */
+    overflow: hidden;
 }
 
 h2 {
     text-align: center;
     margin-top: 20px;
     font-size: 2.5em;
+    
 }
 
 table {
+    text-align: center;
     width: 80%;
     margin: 20px auto;
     border-collapse: collapse;
-    background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.8); 
     color: #00ff00;
     border: 1px solid #00ff00;
 }
-
+th, td {
+    text-align: center; 
+}
 p {
+    text-align: center;
+    align-items: center;
     padding: 20px;
     font-size: 1.2em;
     line-height: 1.6;
@@ -34,12 +41,14 @@ p {
 }
 
 a {
+    text-align: center;
     color: #00ff00;
     text-decoration: none;
     font-size: 1.5em;
     border: 1px solid #00ff00;
     padding: 10px 20px;
     transition: background-color 0.3s, color 0.3s;
+    display: inline-block;
 }
 
 a:hover {
@@ -63,7 +72,7 @@ a:hover {
     top: -100px;
     color: #00ff00;
     font-size: 16px;
-    writing-mode: vertical-lr; /* Texto vertical */
+    writing-mode: vertical-lr; 
     text-orientation: upright;
     white-space: nowrap;
     animation: fall linear infinite;
@@ -72,5 +81,83 @@ a:hover {
 @keyframes fall {
     to {
         transform: translateY(100vh);
+    }
+}
+
+@media (max-width: 1024px) {
+    h2 {
+        font-size: 2em; 
+    }
+
+    table {
+        width: 90%;
+    }
+
+    p {
+        font-size: 1em; 
+        padding: 10px;
+    }
+
+    a {
+        font-size: 1.2em; 
+        padding: 8px 16px; 
+    }
+
+    .matrix-stream {
+        font-size: 14px; 
+    }
+}
+
+
+@media (max-width: 767px) {
+    h2 {
+        font-size: 1.5em; 
+        margin-top: 10px; 
+    }
+
+    table {
+        width: 95%; 
+        font-size: 0.9em; 
+        margin: 0 auto;
+    }
+
+    p {
+        font-size: 0.9em; 
+        padding: 5px; 
+        line-height: 1.4; 
+    }
+
+    a {
+        font-size: 1em; 
+        padding: 6px 12px; 
+    }
+
+    .matrix-stream {
+        font-size: 12px; 
+    }
+}
+
+
+@media (max-width: 320px) {
+    h2 {
+        font-size: 1.2em; 
+    }
+
+    table {
+        width: 100%; 
+        font-size: 0.8em; 
+    }
+
+    p {
+        font-size: 0.8em; 
+    }
+
+    a {
+        font-size: 0.9em; 
+        padding: 4px 8px; 
+    }
+
+    .matrix-stream {
+        font-size: 10px; 
     }
 }

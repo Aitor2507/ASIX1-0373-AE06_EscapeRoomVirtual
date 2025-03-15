@@ -37,41 +37,41 @@ body {
     width: 20%;
     margin: 20px auto;
     border-collapse: collapse;
-    background-color: #00ff00; /* Fondo verde */
-    color: black; /* Texto en negro para contrastar con el fondo verde */
-    border: 1px solid #00ff00; /* Borde verde */
-    padding: 10px 20px; /* Espaciado interno */
-    font-size: 1.2em; /* Tamaño de fuente */
-    cursor: pointer; /* Cambia el cursor a una mano al pasar el mouse */
-    border-radius: 5px; /* Bordes redondeados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra inicial */
-    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; /* Transición suave */
+    background-color: #00ff00; 
+    color: black;
+    border: 1px solid #00ff00; 
+    padding: 10px 20px; 
+    font-size: 1.2em; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; 
 }
 
 /* Efecto al pasar el mouse */
 .btn-1:hover {
-    background-color: #00cc00; /* Verde más oscuro */
-    box-shadow: 0 6px 8px rgba(0, 255, 0, 0.3); /* Sombra más pronunciada */
-    transform: translateY(-2px); /* Efecto de levitación */
+    background-color: #00cc00; 
+    box-shadow: 0 6px 8px rgba(0, 255, 0, 0.3); 
+    transform: translateY(-2px); 
 }
 
 /* Efecto al hacer clic */
 .btn-1:active {
-    background-color: #009900; /* Verde aún más oscuro */
-    box-shadow: 0 2px 4px rgba(0, 255, 0, 0.3); /* Sombra más pequeña */
-    transform: translateY(0); /* Vuelve a su posición original */
+    background-color: #009900; 
+    box-shadow: 0 2px 4px rgba(0, 255, 0, 0.3);
+    transform: translateY(0); 
 }
 .style-form {
-    color: #007BFF; /* Color azul */
-    text-decoration: none; /* Quita el subrayado */
+    color: #007BFF; 
+    text-decoration: none; 
     font-size: 1.2em;
-    transition: color 0.5s ease; /* Transición suave para el cambio de color */
+    transition: color 0.5s ease; 
 
 }
 
 /* Cambio de color al pasar el cursor */
 .style-form:hover {
-    color: #FF5733; /* Color naranja */
+    color: #FF5733;
     transition: color 0.5 ease;
 }
 
@@ -160,35 +160,66 @@ body {
     height: 10%;
 }
 
-/* Container */
+
 .container {
     position: relative;
 }
 
-/* Responsive */
 
 @media (max-width: 1024px) {
-    .acertijo_reto1 {
-        width: 40%;
-    }
-}
-
-@media (max-width: 768px) {
     body {
-        font-size: 14px;
+        font-size: 16px; 
     }
+
+    .btn-1 {
+        width: 40%; 
+    }
+
     .acertijo_reto1 {
-        width: 60%;
+        width: 30%; 
+        font-size: 14px; 
+    }
+
+    #img_reto2 {
+        width: 30px; 
+    }
+
+    #hacker {
+        max-width: 10%; 
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
     body {
-        font-size: 12px;
+        font-size: 14px; 
     }
+
+    .btn-1 {
+        width: 60%; 
+        font-size: 1em; 
+        padding: 8px 16px; 
+    }
+
     .acertijo_reto1 {
-        width: 80%;
-        position: relative;
+        width: 50%; 
+        font-size: 12px; 
+        position: relative; 
+        top: auto;
+        left: auto;
+        margin: 10px auto; 
+    }
+
+    #img_reto2 {
+        width: 20px;
+    }
+
+    #hacker {
+        max-width: 15%;
+    }
+
+    .boton-escondido {
+        width: 20px; 
+        height: 20px;
+        font-size: 8px; 
     }
 }
-
